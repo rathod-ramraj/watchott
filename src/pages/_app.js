@@ -12,9 +12,9 @@ export default function App({ Component, pageProps, router }) {
   return (
     <AdProvider>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico?v=2" />
+        <link rel="shortcut icon" href="/favicon.ico?v=2" />
+        <link rel="apple-touch-icon" href="/favicon.ico?v=2" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       </Head>
       {!splashFinished && <SplashScreen onComplete={() => setSplashFinished(true)} />}
