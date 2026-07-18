@@ -1,0 +1,399 @@
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\components\HeroSlider.js
+   35:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  33 |       try {
+  34 |         const parsed = JSON.parse(saved);
+> 35 |         setInWatchlist(parsed.some(item => item.id === movie.id));
+     |         ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  36 |       } catch (e) {}
+  37 |     }
+  38 |   }, [movie]);  react-hooks/set-state-in-effect
+   36:16  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+   43:60  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+  127:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @next/next/no-img-element
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\components\Layout.js
+  2:8  warning  'Footer' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\components\MovieCard.js
+  39:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\components\Navbar.js
+  1:20  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+  4:72  warning  'Target' is defined but never used     @typescript-eslint/no-unused-vars
+  5:10  warning  'motion' is defined but never used     @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\components\Player.js
+   3:10  warning  'Server' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  38:46  warning  'imdb' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+  68:7   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  66 |   useEffect(() => {
+  67 |     if (propImdbId) {
+> 68 |       setImdbId(propImdbId);
+     |       ^^^^^^^^^ Avoid calling setState() directly within an effect
+  69 |     }
+  70 |   }, [propImdbId]);
+  71 |                                                                                    react-hooks/set-state-in-effect
+  94:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  92 |
+  93 |   useEffect(() => {
+> 94 |     setActiveServerIndex(0);
+     |     ^^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  95 |   }, [mediaId, season, episode]);
+  96 |
+  97 |   useEffect(() => {                                                                     react-hooks/set-state-in-effect
+  99:7   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+   97 |   useEffect(() => {
+   98 |     if (sourceUrl) {
+>  99 |       setVideoUrl(sourceUrl);
+      |       ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  100 |       return;
+  101 |     }
+  102 |     if (activeServer && mediaId && !mediaId.toString().startsWith('admin_')) {  react-hooks/set-state-in-effect
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\components\Row.js
+  40:6  warning  React Hook useEffect has a missing dependency: 'movies.length'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\404.js
+  27:26  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  27:48  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\_app.js
+  3:20  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\anime.js
+  13:5   error  Error: Cannot access variable before it is declared
+
+`fetchShows` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+  11 |
+  12 |   useEffect(() => {
+> 13 |     fetchShows(1);
+     |     ^^^^^^^^^^ `fetchShows` accessed before it is declared
+  14 |   }, []);
+  15 |
+  16 |   const fetchShows = async (pageNumber) => {
+
+  14 |   }, []);
+  15 |
+> 16 |   const fetchShows = async (pageNumber) => {
+     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 17 |     setLoading(true);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |     try {
+     ΓÇª
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 28 |     setLoading(false);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 29 |   };
+     | ^^^^^ `fetchShows` is declared here
+  30 |
+  31 |   const loadMore = () => {
+  32 |     const next = page + 1;  react-hooks/immutability
+  54:24  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+  52 |         >
+  53 |           {shows.map((show) => (
+> 54 |              <div key={Math.random()} className="flex justify-center w-full">
+     |                        ^^^^^^^^^^^^^ Cannot call impure function
+  55 |                <MovieCard movie={{ ...show, media_type: 'tv' }} isGrid={true} />
+  56 |              </div>
+  57 |           ))}                                                                                                                                                  react-hooks/purity
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\api\proxy.js
+  55:24  warning  'e' is defined but never used  @typescript-eslint/no-unused-vars
+  67:18  warning  'e' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\history.js
+   32:64  warning  'e' is defined but never used                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+   82:61  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  110:70  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  127:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\livetv.js
+    1:31  warning  'useRef' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+    4:18  warning  'Tv' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+   34:7   error    Error: Cannot access variable before it is declared
+
+`fetchChannels` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+  32 |       setChannels([]);
+  33 |       setHasMore(true);
+> 34 |       fetchChannels(1, region, search);
+     |       ^^^^^^^^^^^^^ `fetchChannels` accessed before it is declared
+  35 |     }, 500);
+  36 |     return () => clearTimeout(handler);
+  37 |   }, [search, region]);
+
+  37 |   }, [search, region]);
+  38 |
+> 39 |   const fetchChannels = async (pageNum, currentRegion, currentSearch) => {
+     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 40 |     if (loading && pageNum !== 1) return;
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 41 |
+     ΓÇª
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 59 |     setLoading(false);
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 60 |   };
+     | ^^^^^ `fetchChannels` is declared here
+  61 |
+  62 |   const loadMore = () => {
+  63 |     if (!hasMore || loading) return;  react-hooks/immutability
+   37:6   warning  React Hook useEffect has a missing dependency: 'fetchChannels'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               react-hooks/exhaustive-deps
+  142:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @next/next/no-img-element
+  240:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @next/next/no-img-element
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\login.js
+  6:34  warning  'Film' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\manage-ads.js
+   29:21  warning  'error' is assigned a value but never used                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  203:28  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\movies.js
+  38:5   error  Error: Cannot access variable before it is declared
+
+`fetchMovies` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+  36 |
+  37 |   useEffect(() => {
+> 38 |     fetchMovies(1, selectedGenre);
+     |     ^^^^^^^^^^^ `fetchMovies` accessed before it is declared
+  39 |   }, [selectedGenre]);
+  40 |
+  41 |   const fetchMovies = async (pageNumber, genreId) => {
+
+  39 |   }, [selectedGenre]);
+  40 |
+> 41 |   const fetchMovies = async (pageNumber, genreId) => {
+     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 42 |     setLoading(true);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 43 |     let newMovies = [];
+     ΓÇª
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 55 |     setLoading(false);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 56 |   };
+     | ^^^^^ `fetchMovies` is declared here
+  57 |
+  58 |   const loadMore = () => {
+  59 |     const next = page + 1;  react-hooks/immutability
+  99:24  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+   97 |         >
+   98 |           {movies.map((movie) => (
+>  99 |              <div key={Math.random()} className="flex justify-center w-full">
+      |                        ^^^^^^^^^^^^^ Cannot call impure function
+  100 |                <MovieCard movie={{ ...movie, media_type: 'movie' }} isGrid={true} />
+  101 |              </div>
+  102 |           ))}                                                                                                                                                                                                                               react-hooks/purity
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\mylist.js
+  30:62  warning  'e' is defined but never used                                    @typescript-eslint/no-unused-vars
+  87:56  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\myspace.js
+  12:9  warning  'router' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\privacy.js
+  61:67  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\search.js
+  79:56   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  79:110  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\site\[id].js
+   50:22  warning  The ref value 'containerRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'containerRef.current' to a variable inside the effect, and use that variable in the cleanup function                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/exhaustive-deps
+  106:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  104 |     
+  105 |     // Reset timer when ID changes
+> 106 |     setShowAd(true);
+      |     ^^^^^^^^^ Avoid calling setState() directly within an effect
+  107 |     setAdTimer(30);
+  108 |
+  109 |     const fetchAds = async () => {  react-hooks/set-state-in-effect
+  161:26  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @next/next/no-img-element
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\trending.js
+  12:5   error  Error: Cannot access variable before it is declared
+
+`fetchTrending` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+  10 |
+  11 |   useEffect(() => {
+> 12 |     fetchTrending();
+     |     ^^^^^^^^^^^^^ `fetchTrending` accessed before it is declared
+  13 |   }, []);
+  14 |
+  15 |   const fetchTrending = async () => {
+
+  13 |   }, []);
+  14 |
+> 15 |   const fetchTrending = async () => {
+     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 16 |     setLoading(true);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 17 |     try {
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |       const data = await getTrendingMovies();
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 19 |       setMovies(data);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 20 |     } catch (error) {
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 21 |       console.error(error);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 22 |     }
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 23 |     setLoading(false);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 24 |   };
+     | ^^^^^ `fetchTrending` is declared here
+  25 |
+  26 |   return (
+  27 |     <>  react-hooks/immutability
+  50:24  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+  48 |         >
+  49 |           {movies.map((movie) => (
+> 50 |              <div key={Math.random()} className="flex justify-center w-full">
+     |                        ^^^^^^^^^^^^^ Cannot call impure function
+  51 |                <MovieCard movie={{ ...movie }} isGrid={true} />
+  52 |              </div>
+  53 |           ))}                                                                                                                                                                                                                                                                                                                                                                                                                                react-hooks/purity
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\tvshows.js
+  13:5   error  Error: Cannot access variable before it is declared
+
+`fetchShows` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+  11 |
+  12 |   useEffect(() => {
+> 13 |     fetchShows(1);
+     |     ^^^^^^^^^^ `fetchShows` accessed before it is declared
+  14 |   }, []);
+  15 |
+  16 |   const fetchShows = async (pageNumber) => {
+
+  14 |   }, []);
+  15 |
+> 16 |   const fetchShows = async (pageNumber) => {
+     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 17 |     setLoading(true);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |     try {
+     ΓÇª
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 28 |     setLoading(false);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 29 |   };
+     | ^^^^^ `fetchShows` is declared here
+  30 |
+  31 |   const loadMore = () => {
+  32 |     const next = page + 1;  react-hooks/immutability
+  54:24  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+  52 |         >
+  53 |           {shows.map((show) => (
+> 54 |              <div key={Math.random()} className="flex justify-center w-full">
+     |                        ^^^^^^^^^^^^^ Cannot call impure function
+  55 |                <MovieCard movie={{ ...show, media_type: 'tv' }} isGrid={true} />
+  56 |              </div>
+  57 |           ))}                                                                                                                                                  react-hooks/purity
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\watch\[id].js
+    5:8   warning  'Image' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+   43:22  warning  The ref value 'containerRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'containerRef.current' to a variable inside the effect, and use that variable in the cleanup function                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             react-hooks/exhaustive-deps
+  113:7   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  111 |       fetchAds();
+  112 |     } else {
+> 113 |       setCurrentAds([]);
+      |       ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  114 |     }
+  115 |   }, [showAd]);
+  116 |                                                                     react-hooks/set-state-in-effect
+  224:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+  222 |     fetchDetailedData();
+  223 |     // Reset states on new id
+> 224 |     setIsPlaying(false);
+      |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  225 |     setCurrentEpisode(1);
+  226 |     setShowAd(false);
+  227 |     setAdTimer(30);  react-hooks/set-state-in-effect
+  237:15  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+  265:9   warning  'trailer' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  279:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @next/next/no-img-element
+  279:13  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           jsx-a11y/alt-text
+  292:24  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @next/next/no-img-element
+  292:24  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           jsx-a11y/alt-text
+  356:30  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @next/next/no-img-element
+  407:27  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @next/next/no-img-element
+  407:27  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           jsx-a11y/alt-text
+  442:29  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @next/next/no-img-element
+  442:29  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           jsx-a11y/alt-text
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\services\tmdb.js
+  85:18  warning  'fallbackErr' is defined but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 66 problems (24 errors, 42 warnings)
+

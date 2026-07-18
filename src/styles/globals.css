@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0f1014;
+  --bg-secondary: #16181f;
+  --text-primary: #ffffff;
+  --text-secondary: #8f98b0;
+  --text-muted: #8f98b0;
+  --accent: #1f80e0; /* Hotstar blue */
+}
+
+@theme {
+  --color-brand-bg: var(--bg-primary);
+  --color-brand-surface: var(--bg-secondary);
+  --color-brand-text: var(--text-primary);
+  --color-brand-muted: var(--text-secondary);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide Scrollbar but keep functionality */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Utility: hide scrollbar on specific scroll containers */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Base button styles */
+.btn-primary {
+  background-color: white;
+  color: black;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-secondary {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(109, 109, 110, 0.4);
+}
+
+/* Swiper custom overrides to allow overflowing cards */
+.swiper-container {
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+/* Hero Slider Custom Pagination */
+.hero-slider-container .swiper-pagination {
+  bottom: 80px !important;
+  right: 48px !important;
+  left: auto !important;
+  width: auto !important;
+  display: flex !important;
+  gap: 6px;
+  z-index: 30 !important;
+}
+
+.hero-slider-container .custom-bullet {
+  width: 24px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-slider-container .custom-bullet.swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 32px;
+}
+
+@media (max-width: 768px) {
+  .hero-slider-container .swiper-pagination {
+    bottom: 45px !important;
+    right: 24px !important;
+  }
+}
+

@@ -1,0 +1,85 @@
+
+> movie-3d-website@0.1.0 lint
+> eslint
+
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\components\HeroSlider.js
+   37:16  warning  'e' is defined but never used                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+   44:60  warning  'e' is defined but never used                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  131:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\components\Layout.js
+  2:8  warning  'Footer' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\components\Navbar.js
+  1:20  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+  4:72  warning  'Target' is defined but never used     @typescript-eslint/no-unused-vars
+  5:10  warning  'motion' is defined but never used     @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\components\Player.js
+   3:10  warning  'Server' is defined but never used  @typescript-eslint/no-unused-vars
+  30:46  warning  'imdb' is defined but never used    @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\components\Row.js
+  40:6  warning  React Hook useEffect has a missing dependency: 'movies.length'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\_app.js
+  3:20  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\api\proxy.js
+  71:24  warning  'e' is defined but never used  @typescript-eslint/no-unused-vars
+  82:18  warning  'e' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\history.js
+   32:64  warning  'e' is defined but never used                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  127:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\livetv.js
+    1:31  warning  'useRef' is defined but never used                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+    4:18  warning  'Tv' is defined but never used                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+   60:6   warning  React Hook useEffect has a missing dependency: 'fetchChannels'. Either include it or remove the dependency array                                                                                                                                                                         react-hooks/exhaustive-deps
+  142:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  240:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\login.js
+  6:34  warning  'Film' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\manage-ads.js
+   29:21  warning  'error' is assigned a value but never used                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  203:28  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\mylist.js
+  30:62  warning  'e' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\myspace.js
+  12:9  warning  'router' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\site\[id].js
+   50:22  warning  The ref value 'containerRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'containerRef.current' to a variable inside the effect, and use that variable in the cleanup function                  react-hooks/exhaustive-deps
+  113:23  warning  'error' is assigned a value but never used                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  120:16  warning  'err' is defined but never used                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  170:26  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\pages\watch\[id].js
+    5:8   warning  'Image' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   43:22  warning  The ref value 'containerRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'containerRef.current' to a variable inside the effect, and use that variable in the cleanup function                  react-hooks/exhaustive-deps
+  107:25  warning  'error' is assigned a value but never used                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  114:18  warning  'err' is defined but never used                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  246:15  warning  'e' is defined but never used                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  274:9   warning  'trailer' is assigned a value but never used                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+  288:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  288:13  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+  301:24  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  301:24  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+  365:30  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  416:27  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  416:27  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+  451:29  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  451:29  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+
+C:\Users\virtu\Downloads\ttv\movie-3d-website\src\services\tmdb.js
+   41:17  warning  'innerErr' is defined but never used  @typescript-eslint/no-unused-vars
+  106:14  warning  'err' is defined but never used       @typescript-eslint/no-unused-vars
+
+Γ£û 46 problems (0 errors, 46 warnings)
+

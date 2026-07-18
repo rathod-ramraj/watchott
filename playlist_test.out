@@ -1,0 +1,19 @@
+HTTP/1.1 414 URI Too Long
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, OPTIONS
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept
+Content-Type: text/html
+ETag: "vcykv79um1ig"
+Content-Length: 664
+Vary: Accept-Encoding
+Date: Tue, 24 Mar 2026 13:11:26 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+/api/proxy?url=https%3A%2F%2Fjmp2.uk%2F1539795%2F%253Chtml%253E
+/api/proxy?url=https%3A%2F%2Fjmp2.uk%2F1539795%2F%253Chead%253E%253Ctitle%253E414%2520Request-URI%2520Too%2520Large%253C%2Ftitle%253E%253C%2Fhead%253E
+/api/proxy?url=https%3A%2F%2Fjmp2.uk%2F1539795%2F%253Cbody%253E
+/api/proxy?url=https%3A%2F%2Fjmp2.uk%2F1539795%2F%253Ccenter%253E%253Ch1%253E414%2520Request-URI%2520Too%2520Large%253C%2Fh1%253E%253C%2Fcenter%253E
+/api/proxy?url=https%3A%2F%2Fjmp2.uk%2F1539795%2F%253Chr%253E%253Ccenter%253Enginx%253C%2Fcenter%253E
+/api/proxy?url=https%3A%2F%2Fjmp2.uk%2F1539795%2F%253C%2Fbody%253E
+/api/proxy?url=https%3A%2F%2Fjmp2.uk%2F1539795%2F%253C%2Fhtml%253E

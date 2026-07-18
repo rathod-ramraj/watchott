@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisement - Cinevarse</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.addEventListener('message', function(event) {
+            if (event.data && event.data.html) {
+                document.open();
+                document.write(event.data.html);
+                document.close();
+            }
+        });
+    </script>
+</body>
+</html>
