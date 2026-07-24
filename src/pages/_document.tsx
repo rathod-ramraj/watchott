@@ -15,6 +15,7 @@ export default function Document() {
       <body className="antialiased">
         <Main />
         <NextScript />
+        <script async src="https://nezukoo.vercel.app/embed/s_5lB6-iUIx57zB2N2.js"></script>
       </body>
     </Html>
   );
