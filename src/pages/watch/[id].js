@@ -440,8 +440,8 @@ export default function Watch() {
                      <h3 className="text-xl font-bold mb-6 text-white">Cast</h3>
                      <div className="flex gap-4 overflow-x-auto pb-4 hide-scrollbar">
                         {details.credits.cast.slice(0, 10).map((actor) => (
-                           <div key={actor.id} className="w-24 md:w-32 shrink-0 group text-center cursor-pointer">
-                                <div className="w-full aspect-square rounded-full overflow-hidden bg-gray-800 mb-3 border-2 border-transparent transition-all flex items-center justify-center relative">
+                           <div key={actor.id} className="w-28 md:w-32 shrink-0 group text-center cursor-pointer">
+                                <div className="w-full aspect-[2/3] rounded-xl overflow-hidden bg-gray-800 mb-3 border-2 border-transparent transition-all flex items-center justify-center relative">
                                    {actor.profile_path ? (
                                       <Image src={`https://image.tmdb.org/t/p/w185${actor.profile_path}`} fill sizes="20vw" className="object-cover group-hover:scale-105 transition-transform" alt={actor.name} />
                                    ) : (
