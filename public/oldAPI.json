@@ -1,0 +1,204 @@
+{
+  "servers": [
+    {
+      "name": "Server 1 ⭐ VidLink",
+      "movieUrl": "https://vidlink.pro/movie/{id}",
+      "tvUrl": "https://vidlink.pro/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "Server 2 Vidsrc.to",
+      "movieUrl": "https://vidsrc.to/embed/movie/{id}",
+      "tvUrl": "https://vidsrc.to/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "Server 3 Vidsrc.icu",
+      "movieUrl": "https://vidsrc.icu/embed/movie/{imdb_or_id}",
+      "tvUrl": "https://vidsrc.icu/embed/tv/{imdb_or_id}/{s}/{e}"
+    },
+    {
+      "name": "Server 4 Vidsrc.cc",
+      "movieUrl": "https://vidsrc.cc/v3/embed/movie/{imdb_or_id}",
+      "tvUrl": "https://vidsrc.cc/v3/embed/tv/{imdb_or_id}/{s}/{e}"
+    },
+    {
+      "name": "Server 5 GoDrivePlayer",
+      "movieUrl": "https://godriveplayer.com/player.php?tmdb={id}",
+      "tvUrl": "https://godriveplayer.com/player.php?type=series&tmdb={id}&season={s}&episode={e}"
+    },
+    {
+      "name": "Server 6 VidKing",
+      "movieUrl": "https://www.vidking.net/embed/movie/{id}",
+      "tvUrl": "https://www.vidking.net/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "Server 7 Vidsrc.me",
+      "movieUrl": "https://vidsrc.me/embed/movie?{imdb_or_tmdb}",
+      "tvUrl": "https://vidsrc.me/embed/tv?{imdb_or_tmdb}&season={s}&episode={e}"
+    },
+    {
+      "name": "Server 8 SuperFlix",
+      "movieUrl": "https://superflix.to/embed/movie/{id}",
+      "tvUrl": "https://superflix.to/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "Server 9 Embed.su",
+      "movieUrl": "https://embed.su/embed/movie/{id}",
+      "tvUrl": "https://embed.su/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "Server 10 VidSrc.xyz",
+      "movieUrl": "https://vidsrc.xyz/embed/movie/{id}",
+      "tvUrl": "https://vidsrc.xyz/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "Server 11 2Embed",
+      "movieUrl": "https://www.2embed.cc/embed/{id}",
+      "tvUrl": "https://www.2embed.cc/embedtv/{id}&s={s}&e={e}"
+    },
+    {
+      "name": "Server 12 AutoEmbed",
+      "movieUrl": "https://autoembed.cc/embed/movie/{id}",
+      "tvUrl": "https://autoembed.cc/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "Server 13 MultiEmbed",
+      "movieUrl": "https://multiembed.mov/?video_id={imdb_or_id}&tmdb={isTmdb}",
+      "tvUrl": "https://multiembed.mov/?video_id={id}&tmdb=1&s={s}&e={e}"
+    },
+    {
+      "name": "Server 14 VidSrc.wtf",
+      "movieUrl": "https://vidsrc.wtf/embed/movie/{id}",
+      "tvUrl": "https://vidsrc.wtf/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "Server 15 SmashyStream",
+      "movieUrl": "https://player.smashy.stream/movie/{id}",
+      "tvUrl": "https://player.smashy.stream/tv/{id}?s={s}&e={e}"
+    },
+    {
+      "name": "Server 16 Videasy Premium",
+      "movieUrl": "https://player.videasy.net/movie/{videoId}?color=8B5CF6...",
+      "tvUrl": "https://player.videasy.net/tv/{videoId}/{s}/{e}?color=8B5CF6..."
+    },
+    {
+      "name": "Server 17 PrimeWire",
+      "movieUrl": "https://primewire.mx/embed/movie/{id}",
+      "tvUrl": "https://primewire.mx/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "vidsrc.mov ⭐",
+      "movieUrl": "https://vidsrc.mov/embed/movie/{imdb_or_id}",
+      "tvUrl": "https://vidsrc.mov/embed/tv/{imdb_or_id}/{s}/{e}"
+    },
+    {
+      "name": "Vidzee",
+      "movieUrl": "https://player.vidzee.wtf/embed/movie/{imdb_or_id}",
+      "tvUrl": "https://player.vidzee.wtf/embed/tv/{imdb_or_id}/{s}/{e}"
+    },
+    {
+      "name": "VidRock",
+      "movieUrl": "https://vidrock.net/embed/movie/{id}",
+      "tvUrl": "https://vidrock.net/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "VidSrc.wtf (API 1)",
+      "movieUrl": "https://vidsrc.wtf/api/1/movie?id={id}",
+      "tvUrl": "https://vidsrc.wtf/api/1/tv?id={id}&s={s}&e={e}"
+    },
+    {
+      "name": "VidSrc.wtf (API 2)",
+      "movieUrl": "https://vidsrc.wtf/api/2/movie?id={id}",
+      "tvUrl": "https://vidsrc.wtf/api/2/tv?id={id}&s={s}&e={e}"
+    },
+    {
+      "name": "VidSrc.wtf (API 3)",
+      "movieUrl": "https://vidsrc.wtf/api/3/movie?id={id}",
+      "tvUrl": "https://vidsrc.wtf/api/3/tv?id={id}&s={s}&e={e}"
+    },
+    {
+      "name": "Vidnest",
+      "movieUrl": "https://vidnest.fun/embed/movie/{id}",
+      "tvUrl": "https://vidnest.fun/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "RiveEmbed",
+      "movieUrl": "https://rive.stream/embed/movie/{id}",
+      "tvUrl": "https://rive.stream/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "SmashyStream",
+      "movieUrl": "https://player.smashy.stream/movie/{id}",
+      "tvUrl": "https://player.smashy.stream/tv/{id}?s={s}&e={e}"
+    },
+    {
+      "name": "111Movies",
+      "movieUrl": "https://111movies.net/movie/{id}",
+      "tvUrl": "https://111movies.net/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "Videasy",
+      "movieUrl": "https://player.videasy.net/movie/{id}",
+      "tvUrl": "https://player.videasy.net/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "VidLink",
+      "movieUrl": "https://vidlink.pro/movie/{id}",
+      "tvUrl": "https://vidlink.pro/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "VidFast",
+      "movieUrl": "https://www.vidfast.in/embed/movie/{id}",
+      "tvUrl": "https://www.vidfast.in/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "Embed.su",
+      "movieUrl": "https://embed.su/embed/movie/{id}",
+      "tvUrl": "https://embed.su/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "2Embed",
+      "movieUrl": "https://www.2embed.cc/embed/{id}",
+      "tvUrl": "https://www.2embed.cc/embedtv/{id}&s={s}&e={e}"
+    },
+    {
+      "name": "MoviesAPI",
+      "movieUrl": "https://moviesapi.club/movie/{id}",
+      "tvUrl": "https://moviesapi.club/tv/{id}-{s}-{e}"
+    },
+    {
+      "name": "AutoEmbed",
+      "movieUrl": "https://autoembed.cc/embed/movie/{id}",
+      "tvUrl": "https://autoembed.cc/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "MultiEmbed",
+      "movieUrl": "https://multiembed.mov/?video_id={imdb_or_id}",
+      "tvUrl": "https://multiembed.mov/?video_id={id}&tmdb=1&s={s}&e={e}"
+    },
+    {
+      "name": "VidSrc.xyz",
+      "movieUrl": "https://vidsrc.xyz/embed/movie/{id}",
+      "tvUrl": "https://vidsrc.xyz/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "PrimeWire",
+      "movieUrl": "https://primewire.mx/embed/movie/{id}",
+      "tvUrl": "https://primewire.mx/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "WarezCDN",
+      "movieUrl": "https://embed.warezcdn.com/embed/movie/{id}",
+      "tvUrl": "https://embed.warezcdn.com/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "SuperFlix",
+      "movieUrl": "https://superflix.to/embed/movie/{id}",
+      "tvUrl": "https://superflix.to/embed/tv/{id}/{s}/{e}"
+    },
+    {
+      "name": "VidUp",
+      "movieUrl": "https://vidup.me/embed/movie/{id}",
+      "tvUrl": "https://vidup.me/embed/tv/{id}/{s}/{e}"
+    }
+  ]
+}
