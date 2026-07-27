@@ -107,7 +107,7 @@ export default function Watch() {
    const [isPlaying, setIsPlaying] = useState(false);
    const [isInWatchlist, setIsInWatchlist] = useState(false);
    const [showAd, setShowAd] = useState(false);
-   const [adTimer, setAdTimer] = useState(30);
+   const [adTimer, setAdTimer] = useState(5);
    const [currentAds, setCurrentAds] = useState([]);
 
    useEffect(() => {
@@ -118,7 +118,7 @@ export default function Watch() {
             setIsPlaying(false);
             setCurrentEpisode(1);
             setShowAd(false);
-            setAdTimer(30);
+            setAdTimer(5);
             setCurrentAds([]);
          }, 0);
          return () => clearTimeout(timer);
@@ -354,7 +354,7 @@ export default function Watch() {
 
                               <div className="flex items-center gap-4 mt-6">
                                  <button
-                                    onClick={() => { setIsPlaying(true); setShowAd(true); setAdTimer(30); }}
+                                    onClick={() => { setIsPlaying(true); setShowAd(true); setAdTimer(5); }}
                                     className="flex items-center gap-2 btn-primary px-8 py-3 rounded-md font-bold transition-all text-white border border-white/20"
                                  >
                                     <Play fill="currentColor" className="w-5 h-5" /> Watch {isTv ? 'S' + selectedSeason + ' E' + currentEpisode : 'Now'}
@@ -475,7 +475,7 @@ export default function Watch() {
                         {episodes.map(ep => (
                            <div
                               key={ep.id}
-                              onClick={() => { setCurrentEpisode(ep.episode_number); setShowAd(true); setIsPlaying(true); setAdTimer(30); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                              onClick={() => { setCurrentEpisode(ep.episode_number); setShowAd(true); setIsPlaying(true); setAdTimer(5); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                               className={`flex gap-4 p-4 rounded-xl cursor-pointer transition-all border ${currentEpisode === ep.episode_number ? 'bg-[#2b3040] border-gray-500' : 'bg-[#16181f] border-transparent hover:bg-[#202430]'}`}
                            >
                               <div className="w-32 md:w-40 shrink-0 aspect-video rounded overflow-hidden relative group font-sans">

@@ -32,7 +32,16 @@ const SERVERS = tmdbData.servers.map((server, index) => {
 
 
 export default function Player({ mediaId, type = 'movie', season = 1, episode = 1, sourceUrl, imdbId: propImdbId, anilistId }) {
-  const [activeServer, setActiveServer] = useState(SERVERS[0]);
+  const [activeServer, setActiveServer] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('preferred-server');
+      if (saved) {
+        const found = SERVERS.find(s => s.name === saved);
+        if (found) return found;
+      }
+    }
+    return SERVERS[0];
+  });
   const [customSources, setCustomSources] = useState([]);
   const [showServers, setShowServers] = useState(false);
   const [videoUrl, setVideoUrl] = useState(sourceUrl || '');
@@ -56,7 +65,13 @@ export default function Player({ mediaId, type = 'movie', season = 1, episode = 
         setMediaIdState(mediaId);
         setSeasonState(season);
         setEpisodeState(episode);
-        setActiveServer(SERVERS[0]);
+        const saved = typeof window !== 'undefined' ? localStorage.getItem('preferred-server') : null;
+        let defaultServer = SERVERS[0];
+        if (saved) {
+          const found = SERVERS.find(s => s.name === saved);
+          if (found) defaultServer = found;
+        }
+        setActiveServer(defaultServer);
         setCustomSources([]);
         if (sourceUrl) {
           setVideoUrl(sourceUrl);
@@ -329,7 +344,11 @@ export default function Player({ mediaId, type = 'movie', season = 1, episode = 
                     {SERVERS.map((server) => (
                       <button
                         key={server.name}
-                        onClick={() => { setActiveServer(server); setShowServers(false); }}
+                        onClick={() => { 
+                          setActiveServer(server); 
+                          setShowServers(false); 
+                          localStorage.setItem('preferred-server', server.name);
+                        }}
                         className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 border ${activeServer.name === server.name
                           ? 'bg-blue-600 text-white border-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.3)]'
                           : 'bg-[#0f1014] text-gray-300 hover:bg-white/10 hover:border-white/30 border-[#2b3040]'
